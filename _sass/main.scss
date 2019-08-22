@@ -1,4 +1,4 @@
-body {
-  background: var(--base);
-  height: 100vh;
-}
+@import 'vendor/normalize';
+
+@import 'base/typo',
+        'base/reset';
