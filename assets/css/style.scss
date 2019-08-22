@@ -1,0 +1,9 @@
+---
+---
+
+:root {
+  --base: "{{ site.colors.base }}";
+  --second: "{{ site.colors.second }}";
+}
+
+@import 'main';
