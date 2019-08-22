@@ -1,0 +1,13 @@
+.three-posts {
+  margin-bottom: 30px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    & > div {
+      height: 330px;
+      width: 32%;
+    }
+  }
+}

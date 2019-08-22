@@ -3,10 +3,25 @@ title: Home page
 layout: default
 ---
 
-<div class="post-grid">
+<section class="post-grid">
   {% for post in site.data.data %}
-    {% include post/post-1.html %}
+    {% if forloop.index0 < 5 %}
+      {% include post/post-1.html %}
+    {% endif %}
   {% endfor %}
-</div>
+</section>
 
 {% include welcome.html %}
+
+<section class="three-posts">
+  <h2 class="h2">
+    <span class="h2__text">Category</span>
+  </h2>
+  <div class="three-posts__wrapper">
+    {% for post in site.data.data %}
+      {% if forloop.index0 < 3 %}
+        {% include post/post-center.html %}
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>

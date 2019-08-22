@@ -1,4 +1,4 @@
-.post-image {
+.post-center {
   position: relative;
   overflow: hidden;
   color: #fff;
@@ -28,7 +28,7 @@
 
   &:hover,
   &:focus {
-    .post-image__img {
+    .post-center__img {
       transform: scale(1.1);
     }
   }
@@ -36,12 +36,14 @@
   &__cat {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     background-color: var(--second);
     font-size: 12px;
     padding: 2px 7px;
     display: block;
     transition: .2s background-color;
+    font-weight: 400;
 
     &:hover,
     &:focus {
@@ -63,11 +65,7 @@
     font-size: 22px;
     display: block;
     line-height: 1.4;
-    margin-bottom: 5px;
-  }
-
-  &__date {
-    font-size: 15px;
-    opacity: .6;
+    margin-top: 15px;
+    text-align: center;
   }
 }
