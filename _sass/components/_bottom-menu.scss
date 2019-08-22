@@ -1,0 +1,15 @@
+.bottom-menu {
+  &__link {
+    padding-top: 14px;
+    padding-bottom: 11px;
+    margin-right: 12px;
+    display: block;
+    border-bottom: 3px solid transparent;
+
+    &:hover,
+    &:focus {
+      border-bottom-color: var(--second);
+      color: inherit;
+    }
+  }
+}

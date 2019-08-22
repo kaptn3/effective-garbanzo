@@ -1,0 +1,33 @@
+.header {
+  color: #fff;
+
+  &__top {
+    background-color: var(--third);
+    font-size: 12px;
+  }
+
+  &__logo {
+    background-color: var(--logo);
+    font-size: 5rem;
+    padding: 20px 0;
+  }
+
+  &__bottom {
+    background-color: var(--base);
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__menu {
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+  }
+
+  &__menu-item:not(:last-child) {
+    margin-right: 12px;
+  }
+}

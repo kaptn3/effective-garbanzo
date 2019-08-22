@@ -4,6 +4,8 @@
 :root {
   --base: {{ site.colors.base }};
   --second: {{ site.colors.second }};
+  --third: {{ site.colors.third }};
+  --logo: {{ site.colors.logo }};
 }
 
 @import 'main';

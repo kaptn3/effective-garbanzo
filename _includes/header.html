@@ -1,0 +1,36 @@
+<header class="header">
+  <div class="header__top">
+    <div class="container">
+      <nav class="header__nav">
+        <ul class="header__menu top-menu">
+          {% for item in site.data.menu.top %}
+          <li class="header__menu-item">
+            <a class="top-menu__link" href="{{ item.link}}">{{ item.title }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+        <ul class="header__social">
+
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="header__logo">
+    <div class="container">
+      Logotype
+    </div>
+  </div>
+  <div class="header__bottom">
+    <div class="container">
+      <nav class="header__nav">
+        <ul class="header__menu bottom-menu">
+          {% for item in site.data.menu.top %}
+          <li class="header__menu-item">
+            <a class="bottom-menu__link" href="{{ item.link}}">{{ item.title }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>

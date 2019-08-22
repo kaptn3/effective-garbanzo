@@ -2,3 +2,9 @@
 
 @import 'base/typo',
         'base/reset';
+
+@import 'layouts/container',
+        'layouts/header';
+
+@import 'components/top-menu',
+        'components/bottom-menu';
