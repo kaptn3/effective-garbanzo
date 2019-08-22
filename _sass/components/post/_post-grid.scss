@@ -1,0 +1,44 @@
+.post-grid {
+  display: grid;
+  grid-gap: 2px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "first first second third"
+    "first first fourth fifth";
+
+  & > div {
+    &:nth-child(1) {
+      grid-area: first;
+      height: 430px;
+    }
+
+    &:nth-child(2) {
+      grid-area: second;
+    }
+
+    &:nth-child(3) {
+      grid-area: third;
+    }
+
+    &:nth-child(4) {
+      grid-area: fourth;
+    }
+
+    &:nth-child(5) {
+      grid-area: fifth;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .post-grid {
+    display: block;
+
+    & > div,
+    & > div:nth-child(1) {
+      height: 200px;
+      margin-bottom: 2px;
+    }
+  }
+}

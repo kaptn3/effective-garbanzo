@@ -2,3 +2,9 @@
 title: Home page
 layout: default
 ---
+
+<div class="post-grid">
+  {% for post in site.data.data %}
+    {% include post/post-1.html %}
+  {% endfor %}
+</div>

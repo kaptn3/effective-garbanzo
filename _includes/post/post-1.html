@@ -1,0 +1,13 @@
+<div class="post post-image">
+  <a class="post-image__cat" href="/{{ post.category }}">{{ post.category | capitalize }}</a>
+  <img class="post-image__img" src="{{ post.image }}" alt="{{ post.title }}">
+  <div class="post-image__bottom">
+    <a class="post-image__title" href="{{ post.url}}">{{ post.title }}</a>
+    <span>
+      {{ post.author }}
+    </span>
+    <span class="post-image__date">
+      {{ post.date | date_to_string }}
+    </span>
+  </div>
+</div>
