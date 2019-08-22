@@ -1,4 +1,6 @@
-@import 'vendor/normalize';
+@import 'vendor/normalize',
+        'vendor/fontawesome/fontawesome.scss',
+        'vendor/fontawesome/solid.scss';
 
 @import 'base/typo',
         'base/reset';
