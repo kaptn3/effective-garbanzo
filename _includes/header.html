@@ -9,8 +9,14 @@
           </li>
           {% endfor %}
         </ul>
-        <ul class="header__social">
-
+        <ul class="header__menu">
+          {% for item in site.data.social %}
+          <li>
+            <a href="{{ item.link }}" class="header__social">
+              <i class="fab fa-{{ item.title }}"></i>
+            </a>
+          </li>
+          {% endfor %}
         </ul>
       </nav>
     </div>
@@ -30,6 +36,9 @@
           </li>
           {% endfor %}
         </ul>
+        <button>
+          <i class="fas fa-search"></i>
+        </button>
       </nav>
     </div>
   </div>
