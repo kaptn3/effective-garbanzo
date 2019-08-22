@@ -1,0 +1,15 @@
+.welcome {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+
+  &__logo {
+    width: 25%;
+    flex-shrink: 0;
+    margin-right: 30px;
+
+    img {
+      width: 100%;
+    }
+  }
+}

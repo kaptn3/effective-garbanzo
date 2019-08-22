@@ -5,11 +5,16 @@ html {
   font-family: 'Open Sans', sans-serif;
 }
 
+p {
+  line-height: 1.5;
+}
+
 .h2 {
   line-height: 2em;
   font-size: 18px;
   position: relative;
   color: var(--base);
+  margin-bottom: 23px;
 
   &::after {
     content: '';
