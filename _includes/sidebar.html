@@ -2,4 +2,9 @@
   <h2 class="h2">
     <span class="h2__text">How much is a 2 yard skip hire?</span>
   </h2>
+  {% for post in site.data.content %}
+    {% if forloop.index0 > 5 %}
+      {% include post/post-sidebar.html %}
+    {% endif %}
+  {% endfor %}
 </aside>
