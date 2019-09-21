@@ -21,12 +21,12 @@ layout: home
 <section class="post-article">
   <h2 class="h2">
     <span class="h2__text">How much is a 2 yard skip hire?</span>
-    <div class="post-article__box">
-    {% for post in site.data.content %}
-      {% if forloop.index0 > 5 %}
-        {% include post/post-article.html %}
-      {% endif %}
-    {% endfor %}
-    </div>
   </h2>
+  <div class="post-article__box">
+  {% for post in site.data.content %}
+    {% if forloop.index0 > 5 %}
+      {% include post/post-article.html %}
+    {% endif %}
+  {% endfor %}
+  </div>
 </section>

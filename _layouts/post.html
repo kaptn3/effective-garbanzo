@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+{% assign size = page.name | size | minus: 3 %}
+{% assign name = page.name | slice: 0, size %}
+{% for item in site.data.content %}
+{% if item.Index == name %}
+<article class="article">
+  <h2 class="h2">
+    <span class="h2__text"></span>
+    {{ item.Heading }}
+  </h2>
+  <p>
+    {{ item.Content }}
+  </p>
+  {% endif %}
+  {% endfor %}
+</article>
+
+<section class="three-posts">
+  <h2 class="h2">
+    <span class="h2__text">How much does mini skip hire cost?</span>
+  </h2>
+  <div class="three-posts__wrapper">
+    {% for post in site.data.content %}
+    {% if forloop.index0 < 3 %}
+    {% include post/post-center.html %}
+    {% endif %}
+    {% endfor %}
+  </div>
+</section>
