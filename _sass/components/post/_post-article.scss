@@ -1,0 +1,27 @@
+.post-article {
+  
+  &__box {
+    margin-top: 20px;
+    color: #222;
+  }
+
+  &__item {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  &__article {
+    padding: 20px;
+  }
+
+  &__h {
+    font-size: 18px;
+  }
+
+  &__p {
+    color: #888;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 23px;
+  }
+}

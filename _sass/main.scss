@@ -7,13 +7,18 @@
         'base/reset';
 
 @import 'layouts/container',
-        'layouts/header';
+        'layouts/header',
+        'layouts/footer';
+
+// posts wrappers
+@import 'layouts/post/post-grid',
+        'layouts/post/three-posts';
 
 @import 'components/top-menu',
         'components/bottom-menu',
         'components/welcome';
 
+// post block
 @import 'components/post/post-image',
         'components/post/post-center',
-        'components/post/post-grid',
-        'components/post/three-posts';
+        'components/post/post-article';

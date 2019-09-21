@@ -44,6 +44,8 @@
     display: block;
     transition: .2s background-color;
     font-weight: 400;
+    width: 65%;
+    text-align: center;
 
     &:hover,
     &:focus {

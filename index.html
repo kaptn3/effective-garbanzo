@@ -4,7 +4,7 @@ layout: default
 ---
 
 <section class="post-grid">
-  {% for post in site.data.data %}
+  {% for post in site.data.content %}
     {% if forloop.index0 < 5 %}
       {% include post/post-1.html %}
     {% endif %}
@@ -15,13 +15,26 @@ layout: default
 
 <section class="three-posts">
   <h2 class="h2">
-    <span class="h2__text">Category</span>
+    <span class="h2__text">How much does mini skip hire cost?</span>
   </h2>
   <div class="three-posts__wrapper">
-    {% for post in site.data.data %}
+    {% for post in site.data.content %}
       {% if forloop.index0 < 3 %}
         {% include post/post-center.html %}
       {% endif %}
     {% endfor %}
   </div>
+</section>
+
+<section class="post-article">
+  <h2 class="h2">
+    <span class="h2__text">How much is a 2 yard skip hire?</span>
+    <div class="post-article__box">
+    {% for post in site.data.content %}
+      {% if forloop.index0 > 5 %}
+        {% include post/post-article.html %}
+      {% endif %}
+    {% endfor %}
+    </div>
+  </h2>
 </section>
