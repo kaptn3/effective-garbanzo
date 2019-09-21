@@ -1,15 +1,7 @@
 ---
 title: Home page
-layout: default
+layout: home
 ---
-
-<section class="post-grid">
-  {% for post in site.data.content %}
-    {% if forloop.index0 < 5 %}
-      {% include post/post-1.html %}
-    {% endif %}
-  {% endfor %}
-</section>
 
 {% include welcome.html %}
 

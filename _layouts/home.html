@@ -4,6 +4,13 @@
   <body>
     {% include header.html %}
     <div class="container app">
+      <section class="post-grid app__post-grid">
+        {% for post in site.data.content %}
+          {% if forloop.index0 < 5 %}
+            {% include post/post-1.html %}
+          {% endif %}
+        {% endfor %}
+      </section>
       <main class="main">
         {{ content }}
       </main>

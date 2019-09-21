@@ -7,11 +7,12 @@
 
   &__item {
     display: flex;
+    align-items: flex-start;
     margin-bottom: 20px;
   }
 
   &__article {
-    padding: 20px;
+    padding-left: 20px;
   }
 
   &__h {

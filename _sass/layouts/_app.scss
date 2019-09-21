@@ -1,0 +1,8 @@
+.app {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__post-grid {
+    width: 100%;
+  }
+}
