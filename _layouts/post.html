@@ -4,8 +4,17 @@ layout: default
 
 {% assign size = page.name | size | minus: 3 %}
 {% assign name = page.name | slice: 0, size %}
+
 {% for item in site.data.content %}
-{% if item.Index == name %}
+{% if item.Url == name %}
+  {% assign title = item.Page %}
+{% endif %}
+{% endfor %}
+
+<h1>{{ title }}</h1>
+
+{% for item in site.data.content %}
+{% if item.Url == name %}
 <article class="article">
   <h2 class="h2">
     <span class="h2__text"></span>
@@ -14,9 +23,9 @@ layout: default
   <p>
     {{ item.Content }}
   </p>
-  {% endif %}
-  {% endfor %}
 </article>
+{% endif %}
+{% endfor %}
 
 <section class="three-posts">
   <h2 class="h2">
