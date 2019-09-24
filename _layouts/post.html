@@ -16,6 +16,7 @@ layout: default
 {% for item in site.data.content %}
 {% if item.Url == name %}
 <article class="article">
+  <img src="{{ item.Image }}">
   <h2 class="h2">
     <span class="h2__text"></span>
     {{ item.Heading }}
