@@ -17,6 +17,7 @@
   &__img {
     transition: .2s transform;
     z-index: -2;
+    object-fit: cover;
   }
 
   &::after {
@@ -24,6 +25,7 @@
     display: block;
     z-index: -1;
     background: rgba(0, 0,0, .2);
+
   }
 
   &:hover,
