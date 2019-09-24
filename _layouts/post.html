@@ -16,14 +16,22 @@ layout: default
 {% for item in site.data.content %}
 {% if item.Url == name %}
 <article class="article">
-  <img src="{{ item.Image }}">
+  {% assign number = forloop.index0 | modulo: 2 %}
   <h2 class="h2">
     <span class="h2__text"></span>
     {{ item.Heading }}
   </h2>
-  <p>
-    {{ item.Content }}
-  </p>
+  <div class="article__post">
+    {% if number == 0 %}
+    <img class="article__img article__img_left" src="{{ item.Image }}">
+    {% endif %}
+    <p>
+      {{ item.Content }}
+    </p>
+    {% if number == 1 %}
+    <img class="article__img article__img_right" src="{{ item.Image }}">
+    {% endif %}
+  </div>
 </article>
 {% endif %}
 {% endfor %}

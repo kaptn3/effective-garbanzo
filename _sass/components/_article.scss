@@ -1,3 +1,23 @@
 .article {
   margin-bottom: 40px;
+
+  &__img {
+    width: 200px;
+    flex-shrink: 0;
+
+    &_right {
+      margin-left: 15px;
+    }
+
+    &_left {
+      margin-right: 15px;
+    }
+  }
+
+  &__post {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
 }
